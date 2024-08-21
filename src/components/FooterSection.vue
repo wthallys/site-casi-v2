@@ -13,7 +13,7 @@
                     <img src="@/assets/email.png" alt="Email" />
                 </div>
             </a>
-            <a href="https://github.com/" target="_blank">
+            <a href="https://chat.whatsapp.com/EJWYzmeFaxc2pts3b3ZBQq/" target="_blank">
                 <div class="icon">
                     <img src="@/assets/whatsapp.png" alt="Whatsapp" />
                 </div>

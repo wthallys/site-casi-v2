@@ -1,5 +1,5 @@
 <template>
-    <section class="contacts    ">
+    <section class="tips">
         <h2>COISAS IMPORTANTES PARA SABER SOBRE O PLANO DE PROJETO DE CURSO</h2>
         <div class="cards">
             <div class="card">
@@ -24,7 +24,7 @@
 </template>
 
 <style scoped>
-.contacts {
+.tips {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #fff;
@@ -32,7 +32,7 @@
   padding: 20px;
 }
 
-.contacts h2 {
+.tips h2 {
   text-align: center;
   margin-bottom: 20px;
 }

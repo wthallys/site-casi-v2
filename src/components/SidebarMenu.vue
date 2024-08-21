@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px;
+    margin-right: 50px;
 }
 
 .sidebar nav {

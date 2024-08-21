@@ -13,3 +13,13 @@ body {
   max-width: 1450px;
   font-weight: normal;
 }
+
+.hide-on-mobile {
+  display: block; /* Exibe o componente por padrão */
+}
+
+@media (max-width: 768px) { /* Define um ponto de interrupção para telas pequenas */
+  .hide-on-mobile {
+    display: none; /* Oculta o componente em telas menores */
+  }
+}

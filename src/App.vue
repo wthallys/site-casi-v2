@@ -3,12 +3,33 @@ import { RouterView } from 'vue-router'
 import SidebarMenu from './components/SidebarMenu.vue';
 
 import FooterSection from './components/FooterSection.vue';
+
+
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isMobile = ref(window.innerWidth < 768);
+
+// Function to update the `isMobile` variable based on the window width
+const updateSize = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
+// Lifecycle hook to add a resize event listener when the component is mounted
+onMounted(() => {
+  window.addEventListener('resize', updateSize);
+});
+
+// Lifecycle hook to remove the resize event listener when the component is unmounted
+onUnmounted(() => {
+  window.removeEventListener('resize', updateSize);
+});
+
 </script>
 
 <template>
 
   <div id="app" class="app-container">
-    <SidebarMenu />
+    <SidebarMenu v-if="!isMobile"/>
     <RouterView />
   </div>
   <FooterSection />

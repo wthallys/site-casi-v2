@@ -21,6 +21,8 @@
 }
 
 .map img {
-    width: 550px;
+    /* width: 550px; */
+    max-width: 100%;
+    height: auto;
 }
 </style>

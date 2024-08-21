@@ -52,4 +52,28 @@
 .card p {
   font-size: 1em;
 }
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* As cartas ocupam 100% da largura disponível */
+    min-width: 50%; /* A largura mínima é 100% */
+  }
+
+  .cards {
+    flex-direction: column; /* As cartas são empilhadas verticalmente */
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    width: 40px; /* Reduz o tamanho da imagem em telas muito pequenas */
+  }
+
+  .card p {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte para telas muito pequenas */
+  }
+}
 </style>

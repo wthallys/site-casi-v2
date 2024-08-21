@@ -21,7 +21,7 @@ import TipsSection from '../components/TipsSection.vue';
 <style>
 
 main {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   width: 100%;
 }
 
